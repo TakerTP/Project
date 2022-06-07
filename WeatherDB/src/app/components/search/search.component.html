@@ -1,0 +1,21 @@
+<div class="search-bar">
+
+    <h4>{{label_date}}</h4>
+    <input class="date" id="" type="date" required [(ngModel)]="wdate" (input)="dateSelected()">
+
+    <h4>{{label_time}}</h4>
+    <select [(ngModel)]="wtime" (change)="timeSelected()" id="input-time">
+        <option *ngFor="let time of times" [ngValue]="time">
+            {{ time }}
+        </option>
+    </select>
+
+    <h4>{{label_province}}</h4>
+    <select [(ngModel)]="wprovince" (change)="provinceSelected()" id="input-location">
+        <option *ngFor="let location of locations" [ngValue]="location">
+            {{ location }}
+        </option>
+    </select>
+    
+    <app-button fw="bold" text="Search" (click)="search()"></app-button>
+</div>

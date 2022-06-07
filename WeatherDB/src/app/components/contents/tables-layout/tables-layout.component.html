@@ -1,0 +1,16 @@
+
+<div class="switch-btns">
+    <app-button-hoverable routerLink="../home-screen" fw="bold" text="Records Table"></app-button-hoverable>
+    <app-button-hoverable routerLink="../insert-screen" fw="bold" text="Insertion Table"></app-button-hoverable>
+</div>
+
+<div class="container">
+    <div class="records-table">
+        <h3>{{records_number}} Records</h3>
+        <app-record-table #app_record_table></app-record-table>
+        <app-page-buttons (forward)="app_record_table.nextWeatherData()" (backward)="app_record_table.previousWeatherData()" class="apb"></app-page-buttons>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,24 @@
+<div class="input-date-time">
+
+    <app-title-input title="Date and Place"></app-title-input>
+    <app-hr w="100px"></app-hr>
+
+    <p>{{label_date}}</p>
+    <input class="date" id="" type="date" required [(ngModel)]="wdate" (input)="dateSelected()">
+
+
+    <p>{{label_time}}</p>
+    <select [(ngModel)]="wtime" (change)="timeSelected()" id="input-time">
+        <option *ngFor="let time of times" [ngValue]="time">
+            {{ time }}
+        </option>
+    </select>
+
+
+    <p>{{label_location}}</p>
+    <select [(ngModel)]="wprovince" (change)="provinceSelected()" id="input-location">
+        <option *ngFor="let location of locations" [ngValue]="location">
+            {{ location }}
+        </option>
+    </select>
+</div>

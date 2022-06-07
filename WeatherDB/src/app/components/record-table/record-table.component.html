@@ -1,0 +1,36 @@
+<table>
+    <thead>
+        <tr>
+            <th class="date">Date</th>
+            <th class="time">Time</th>
+            <th class="location">Location</th>
+            <th class="temp">Temp</th>
+            <th class="temp">Feel Temp</th>
+            <th class="temp">Min Temp</th>
+            <th class="temp">Max Temp</th>
+            <th class="other">Pressure</th>
+            <th class="other">Wind</th>
+            <th class="other">Air Qaulity</th>
+            <th class="other">Cloud</th>
+            <th class="other">Humidity</th>
+            <th class="edit"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let weatherData of weatherDatas">
+            <th class="date">{{weatherData.date}}</th>
+            <th class="time">{{weatherData.time}}</th>
+            <th class="location">{{weatherData.province}}</th>
+            <th class="temp">{{weatherData.temp}}</th>
+            <th class="temp">{{weatherData.feel_like}}</th>
+            <th class="temp">{{weatherData.min_temp}}</th>
+            <th class="temp">{{weatherData.max_temp}}</th>
+            <th class="other">{{weatherData.pressure}}</th>
+            <th class="other">{{weatherData.wind}}</th>
+            <th class="other">{{weatherData.air_quality}}</th>
+            <th class="other">{{weatherData.cloud}}</th>
+            <th class="other">{{weatherData.humidity}}</th>
+            <th><i class="fa fa-edit" (click)="modifiWeatherData(weatherData)"></i></th>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,47 @@
+table {
+    border-collapse: collapse;
+}
+
+thead >tr >th.date, thead >tr >th.location{
+    padding: 17px 50px 17px 30px;
+    text-align: start;
+    border-bottom: 1px solid #9f9f9f;
+    
+}
+
+thead >tr >th.time, thead >tr >th.temp {
+    padding: 17px 20px 17px 10px;
+    text-align: start;
+    border-bottom: 1px solid #9f9f9f;
+    
+}
+
+thead >tr >th.other {
+    padding: 17px 25px 17px 15px;
+    text-align: start;
+    border-bottom: 1px solid #9f9f9f;
+    
+}
+
+thead >tr >th.edit {
+    padding: 17px 13px 17px 13px;
+    text-align: start;
+    border-bottom: 1px solid #9f9f9f;
+    
+}
+ 
+tbody >tr >th {
+    padding: 17px 16px 17px 15px;
+    text-align: start;
+    border-bottom: 1px solid #9f9f9f;
+    font-weight: normal;
+    
+}
+
+tbody >tr >th >i {
+    font-size: 17.5px;
+}
+
+.fa-edit {
+    color: #757575;
+}
